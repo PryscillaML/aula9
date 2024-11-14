@@ -16,4 +16,4 @@ opcao = st.selectbox(
 st.write('Você selecionou: ', opcao)
 
 dadosFiltrados = df[df['nomeServidor'] == opcao]
-dadosFiltrados['salario']
+st.write(dadosFiltrados)
