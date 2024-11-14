@@ -11,7 +11,6 @@ df[list] = df[list].apply(pd.to_numeric, errors='coerce')
 estados = df['NM_UF'].unique()
 estadoFiltro = st.selectbox(
     'Qual estado selecionar?',
-     estados),
      options=["Selecione um estado"] + df['NM_UF'].tolist()
 )
 dadosFiltrados = df[df['NM_UF'] == estadoFiltro]
